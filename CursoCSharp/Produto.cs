@@ -29,5 +29,12 @@ namespace CursoCSharp
         {
             quantidade = quantidade - remov;
         }
+        public override string ToString()
+        {
+            return " O nome do produto é: " + nome + ",o preço : " + preco.ToString("F2") +
+                " e a quantidade: " + quantidade + "Total: " + ValorTotalEmEstoque();
+        }
+
     }
+
 }
